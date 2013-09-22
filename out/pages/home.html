@@ -7,19 +7,25 @@
 	cursor: wait !important;
 	opacity: 0;
 	transition: opacity 0.5s ease;
-}</style><link  rel="stylesheet" href="/styles/vendor/normalize.css" /><link  rel="stylesheet" href="/styles/vendor/foundation.css" /><link  rel="stylesheet" href="/styles/pages/home.css" />
+}</style><link  rel="stylesheet" href="/styles/vendor/normalize.css" /><link  rel="stylesheet" href="/styles/vendor/foundation.css" /><link  rel="stylesheet" href="/styles/app.css" /><link  rel="stylesheet" href="/styles/contender.css" />
   </head>
   <body>
     <div class="row">
       <h1>Foodfight</h1>
-      <h3 class="subheader">Pick a food or pick a fight</h3>
+      <h3 class="subheader">Choose a food or choose a foe.</h3>
 <div class="section-container auto" data-section="">
   <section>
     <p class="title" data-section-title="">
       <a href="#panel1">Contender Entry</a>
     </p>
-    <div class="content" data-section-content="">
-      contender<div id="ff-dropzone" class="ff-dropzone"></div>
+    <div class="content ff-contender" data-section-content="">
+      <div class="ff-container">
+  <h5>picture</h5>
+  <div id="ff-dropzone" class="ff-dropzone"></div>
+  <h5>description</h5>
+  <input type="text" class="ff-description" />
+  <a class="button">Put me on the Card</a>
+</div>
 
     </div>
   </section>
@@ -27,7 +33,7 @@
     <p class="title" data-section-title="">
       <a href="#panel2">Current Card</a>
     </p>
-    <div class="content" data-section-content="">
+    <div class="content ff-card" data-section-content="">
       card
     </div>
   </section>
@@ -35,7 +41,7 @@
     <p class="title" data-section-title="">
       <a href="#panel3">Main Event</a>
     </p>
-    <div class="content" data-section-content="">
+    <div class="content ff-event" data-section-content="">
       event
     </div>
   </section>

@@ -17,14 +17,11 @@
     };
 
     Dropzone.prototype.handleDragover = function() {
-      console.log('dragover');
       this.$el.addClass('ff-hover');
       return false;
     };
 
-    Dropzone.prototype.handleDragend = function() {
-      return console.log('dragend');
-    };
+    Dropzone.prototype.handleDragend = function() {};
 
     Dropzone.prototype.handleDrop = function() {
       this.file = event.dataTransfer.files[0];
@@ -40,7 +37,6 @@
         var image;
         image = new Image;
         image.src = event.target.result;
-        image.width = $el.width();
         return $el.append(image);
       };
       return reader.readAsDataURL(this.file);

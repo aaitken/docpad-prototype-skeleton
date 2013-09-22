@@ -12,13 +12,12 @@ class APP.views.Dropzone extends Backbone.View
 
 
   handleDragover: ->
-    console.log 'dragover'
     @$el.addClass('ff-hover')
     return false
 
 
   handleDragend: ->
-    console.log 'dragend'
+    #console.log 'dragend'
 
 
   handleDrop: ->
@@ -33,7 +32,6 @@ class APP.views.Dropzone extends Backbone.View
     reader.onload = (event)->
       image = new Image
       image.src = event.target.result
-      image.width = $el.width()
       $el.append(image)
     reader.readAsDataURL(@file)
 

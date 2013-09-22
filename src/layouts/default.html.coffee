@@ -8,7 +8,8 @@ html ->
 
     @getBlock('styles').add([
       '/styles/vendor/normalize.css'
-      '/styles/vendor/foundation.css']
+      '/styles/vendor/foundation.css'
+      '/styles/app.css']
       .concat(@document.styles))
       .toHTML()
 
@@ -17,7 +18,7 @@ html ->
     div class:"row", ->
       
       h1 "Foodfight"
-      h3 class:"subheader", "Pick a food or pick a fight"
+      h3 class:"subheader", "Choose a food or choose a foe."
   
       text(@content)
 
