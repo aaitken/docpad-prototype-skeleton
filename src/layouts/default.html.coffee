@@ -30,6 +30,7 @@ html ->
       '/scripts/vendor/foundation-4.3.1.min.js'
       '/scripts/namespaces.js'
       '/scripts/views/dropzone.js'
+      '/scripts/views/entrant.js'
       '/scripts/app.js']
       .concat(@document.scripts))
       .toHTML())
