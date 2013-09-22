@@ -32,6 +32,6 @@ class APP.views.Dropzone extends Backbone.View
     reader.onload = (event)->
       image = new Image
       image.src = event.target.result
-      $el.append(image)
+      $el.html(image)
     reader.readAsDataURL(@file)
 

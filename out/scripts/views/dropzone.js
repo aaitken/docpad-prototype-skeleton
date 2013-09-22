@@ -37,7 +37,7 @@
         var image;
         image = new Image;
         image.src = event.target.result;
-        return $el.append(image);
+        return $el.html(image);
       };
       return reader.readAsDataURL(this.file);
     };
