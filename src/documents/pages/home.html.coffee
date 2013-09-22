@@ -1,7 +1,9 @@
 --- cson
 
 layout: 'default'
-styles: ['/styles/contender.css']
+styles: [
+  '/styles/contender.css'
+  '/styles/card.css']
 scripts: []
 
 ---
