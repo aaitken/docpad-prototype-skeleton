@@ -17,8 +17,8 @@ html ->
 
     div class:"row", ->
       
-      h1 "Foodfight"
-      h3 class:"subheader", "Choose a food or choose a foe."
+      h1 "FoodFight"
+      #h3 class:"subheader", "Choose a food or choose a foe."
   
       text(@content)
 
