@@ -19,20 +19,6 @@ html ->
       h1 "Foodfight"
       h3 class:"subheader", "Pick a food or pick a fight"
   
-      div class:"section-container auto", "data-section":"", ->
-        section ->
-          p class:"title", "data-section-title":"", ->
-            a href:"#panel1", "Contender Entry"
-          div class:"content", "data-section-content":""
-        section ->
-          p class:"title", "data-section-title":"", ->
-            a href:"#panel2", "Current Card"
-          div class:"content", "data-section-content":""
-        section ->
-          p class:"title", "data-section-title":"", ->
-            a href:"#panel3", "Main Event"
-          div class:"content", "data-section-content":""
-
       text(@content)
 
     text(@getBlock('scripts').add([
@@ -41,6 +27,8 @@ html ->
       '/scripts/vendor/jquery-2.0.3.js'
       '/scripts/vendor/backbone-1.0.0.js'
       '/scripts/vendor/foundation-4.3.1.min.js'
+      '/scripts/namespaces.js'
+      '/scripts/views/dropzone.js'
       '/scripts/app.js']
       .concat(@document.scripts))
       .toHTML())

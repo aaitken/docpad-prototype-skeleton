@@ -7,32 +7,39 @@
 	cursor: wait !important;
 	opacity: 0;
 	transition: opacity 0.5s ease;
-}</style><link  rel="stylesheet" href="/styles/vendor/normalize.css" /><link  rel="stylesheet" href="/styles/vendor/foundation.css" />
+}</style><link  rel="stylesheet" href="/styles/vendor/normalize.css" /><link  rel="stylesheet" href="/styles/vendor/foundation.css" /><link  rel="stylesheet" href="/styles/pages/home.css" />
   </head>
   <body>
     <div class="row">
       <h1>Foodfight</h1>
       <h3 class="subheader">Pick a food or pick a fight</h3>
-      <div class="section-container auto" data-section="">
-        <section>
-          <p class="title" data-section-title="">
-            <a href="#panel1">Contender Entry</a>
-          </p>
-          <div class="content" data-section-content=""></div>
-        </section>
-        <section>
-          <p class="title" data-section-title="">
-            <a href="#panel2">Current Card</a>
-          </p>
-          <div class="content" data-section-content=""></div>
-        </section>
-        <section>
-          <p class="title" data-section-title="">
-            <a href="#panel3">Main Event</a>
-          </p>
-          <div class="content" data-section-content=""></div>
-        </section>
-      </div>
+<div class="section-container auto" data-section="">
+  <section>
+    <p class="title" data-section-title="">
+      <a href="#panel1">Contender Entry</a>
+    </p>
+    <div class="content" data-section-content="">
+      contender<div id="ff-dropzone" class="ff-dropzone"></div>
+
+    </div>
+  </section>
+  <section>
+    <p class="title" data-section-title="">
+      <a href="#panel2">Current Card</a>
+    </p>
+    <div class="content" data-section-content="">
+      card
+    </div>
+  </section>
+  <section>
+    <p class="title" data-section-title="">
+      <a href="#panel3">Main Event</a>
+    </p>
+    <div class="content" data-section-content="">
+      event
+    </div>
+  </section>
+</div>
     </div>
 <script >(function(){
 	/* Did we just livereload? */
@@ -79,5 +86,5 @@ var inject = function(){
 	} else {
 		inject();
 	}
-})();</script><script defer="defer"  src="/scripts/vendor/modernizr-2.6.2.js"></script><script defer="defer"  src="/scripts/vendor/underscore-1.5.2.js"></script><script defer="defer"  src="/scripts/vendor/jquery-2.0.3.js"></script><script defer="defer"  src="/scripts/vendor/backbone-1.0.0.js"></script><script defer="defer"  src="/scripts/vendor/foundation-4.3.1.min.js"></script><script defer="defer"  src="/scripts/app.js"></script>  </body>
+})();</script><script defer="defer"  src="/scripts/vendor/modernizr-2.6.2.js"></script><script defer="defer"  src="/scripts/vendor/underscore-1.5.2.js"></script><script defer="defer"  src="/scripts/vendor/jquery-2.0.3.js"></script><script defer="defer"  src="/scripts/vendor/backbone-1.0.0.js"></script><script defer="defer"  src="/scripts/vendor/foundation-4.3.1.min.js"></script><script defer="defer"  src="/scripts/namespaces.js"></script><script defer="defer"  src="/scripts/views/dropzone.js"></script><script defer="defer"  src="/scripts/app.js"></script>  </body>
 </html>

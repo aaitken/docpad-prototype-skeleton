@@ -1,0 +1,3 @@
+window.APP = {}
+window.APP.views = {}
+window.APP.helpers = {}
