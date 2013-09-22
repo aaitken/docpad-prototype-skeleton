@@ -1,6 +1,10 @@
 .ff-card .ff-entrant {
   margin-bottom: 1em;
 }
+.ff-card .ff-entrant p {
+  font-size: 0.9em;
+  color: #6f6f6f;
+}
 .ff-card .ff-image-container {
   display: inline-block;
   margin-right: 1em;

@@ -1,6 +1,8 @@
 div class:"ff-container", ->
   #h5 "latest"
 
+  p "Choose to lunch or launch any current contenders, or enter you own into the fray one stop over."
+  
   dl class:"sub-nav", ->
     dt "View By:"
     dd class:"active", ->
