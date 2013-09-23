@@ -27,7 +27,6 @@
       var $launchButton;
       $launchButton = this.$('.alert');
       $('#myModal img').attr('src', this.$('img').attr('src'));
-      $launchButton.width($launchButton.width());
       return setTimeout((function() {
         $launchButton.html('launched');
         return $launchButton.addClass('disabled');

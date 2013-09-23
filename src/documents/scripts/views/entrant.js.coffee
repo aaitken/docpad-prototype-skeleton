@@ -17,7 +17,7 @@ class APP.views.Entrant extends Backbone.View
   launch: ->
     $launchButton = @$('.alert')
     $('#myModal img').attr('src', @$('img').attr('src'))
-    $launchButton.width($launchButton.width())
+    #$launchButton.width($launchButton.width())
     setTimeout (->
       $launchButton.html('launched')
       $launchButton.addClass('disabled')), 1000
