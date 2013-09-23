@@ -1,6 +1,6 @@
 class APP.views.Entrant extends Backbone.View
 
-  constructor: (data = {picture:'/images/kielbasa.jpg', title:'Test', description:'blah blah blah'})->
+  constructor: (data = {imgSrc:'/images/kielbasa.jpg', title:'Test', description:'blah blah blah'})->
     @className = 'ff-entrant'
     @data = data
     super()
@@ -16,7 +16,7 @@ class APP.views.Entrant extends Backbone.View
   render: ->
     @$el.html """
       <div class="ff-image-container">
-        <img src="#{@data.picture}">
+        <img src="#{@data.imgSrc}">
       </div>
       <div class="ff-image-relatives">
         <h6>#{@data.title}</h6>

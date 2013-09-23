@@ -1,4 +1,4 @@
-class APP.views.Dropzone extends Backbone.View
+class APP.views.ContenderDropzone extends Backbone.View
 
   constructor: ->
     @el = '#ff-dropzone'
@@ -28,10 +28,9 @@ class APP.views.Dropzone extends Backbone.View
 
   preview: ->
     reader = new FileReader()
-    $el = @$el
-    reader.onload = (event)->
-      image = new Image
-      image.src = event.target.result
-      $el.html(image)
+    reader.onload = (event)=>
+      @image = new Image()
+      @image.src = event.target.result
+      @$el.html(@image)
     reader.readAsDataURL(@file)
 

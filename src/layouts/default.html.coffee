@@ -29,7 +29,8 @@ html ->
       '/scripts/vendor/backbone-1.0.0.js'
       '/scripts/vendor/foundation-4.3.1.min.js'
       '/scripts/namespaces.js'
-      '/scripts/views/dropzone.js'
+      '/scripts/views/contender.js'
+      '/scripts/views/contender-dropzone.js'
       '/scripts/views/entrant.js'
       '/scripts/app.js']
       .concat(@document.scripts))

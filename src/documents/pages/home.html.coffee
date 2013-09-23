@@ -17,18 +17,18 @@ div class:"section-container auto", "data-section":"", ->
   section ->
     p class:"title", "data-section-title":"", ->
       a href:"#panel1", "Current Card"
-    div class:"content ff-card", "data-section-content":"", ->
+    div id:"ff-card", class:"content ff-card", "data-section-content":"", ->
       @partial('card.html.coffee')
 
   section ->
     p class:"title", "data-section-title":"", ->
       a href:"#panel2", "Contender Entry"
-    div class:"content ff-contender", "data-section-content":"", ->
+    div id:"ff-contender", class:"content ff-contender", "data-section-content":"", ->
       @partial('contender.html.coffee')
       
   section ->
     p class:"title", "data-section-title":"", ->
       a href:"#panel3", "Main Event"
-    div class:"content ff-event", "data-section-content":"", ->
+    div id:"ff-event", class:"content ff-event", "data-section-content":"", ->
       @partial('event.html.coffee')
       

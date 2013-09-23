@@ -17,7 +17,7 @@
     <p class="title" data-section-title="">
       <a href="#panel1">Current Card</a>
     </p>
-    <div class="content ff-card" data-section-content="">
+    <div id="ff-card" class="content ff-card" data-section-content="">
       <div class="ff-container">
   <p>Choose to lunch or launch any current contenders, or enter you own into the fray one stop over.</p>
   <dl class="sub-nav">
@@ -75,7 +75,7 @@
     <p class="title" data-section-title="">
       <a href="#panel2">Contender Entry</a>
     </p>
-    <div class="content ff-contender" data-section-content="">
+    <div id="ff-contender" class="content ff-contender" data-section-content="">
       <div class="ff-container">
   <p>Enter your food into the fight right here.</p>
   <div class="ff-dropzone-container">
@@ -84,11 +84,11 @@
     </div>
   </div>
   <div class="ff-attribute-container">
-    <h5>2. Title your pretender</h5>
-    <input type="text" class="ff-title" />
+    <h5>2. Title the pretender</h5>
+    <input type="text" id="ff-title" class="ff-title" value="" />
     <h5>3. Sell that shit</h5>
-    <textarea class="ff-description"></textarea>
-    <a class="button">Put me on the Card</a>
+    <textarea id="ff-description" class="ff-description" value=""></textarea>
+    <a id="ff-button" class="button">Put me on the Card</a>
   </div>
 </div>
 
@@ -98,7 +98,7 @@
     <p class="title" data-section-title="">
       <a href="#panel3">Main Event</a>
     </p>
-    <div class="content ff-event" data-section-content="">
+    <div id="ff-event" class="content ff-event" data-section-content="">
       event
     </div>
   </section>
@@ -149,5 +149,5 @@ var inject = function(){
 	} else {
 		inject();
 	}
-})();</script><script defer="defer"  src="/scripts/vendor/modernizr-2.6.2.js"></script><script defer="defer"  src="/scripts/vendor/underscore-1.5.2.js"></script><script defer="defer"  src="/scripts/vendor/jquery-2.0.3.js"></script><script defer="defer"  src="/scripts/vendor/backbone-1.0.0.js"></script><script defer="defer"  src="/scripts/vendor/foundation-4.3.1.min.js"></script><script defer="defer"  src="/scripts/namespaces.js"></script><script defer="defer"  src="/scripts/views/dropzone.js"></script><script defer="defer"  src="/scripts/views/entrant.js"></script><script defer="defer"  src="/scripts/app.js"></script>  </body>
+})();</script><script defer="defer"  src="/scripts/vendor/modernizr-2.6.2.js"></script><script defer="defer"  src="/scripts/vendor/underscore-1.5.2.js"></script><script defer="defer"  src="/scripts/vendor/jquery-2.0.3.js"></script><script defer="defer"  src="/scripts/vendor/backbone-1.0.0.js"></script><script defer="defer"  src="/scripts/vendor/foundation-4.3.1.min.js"></script><script defer="defer"  src="/scripts/namespaces.js"></script><script defer="defer"  src="/scripts/views/contender.js"></script><script defer="defer"  src="/scripts/views/contender-dropzone.js"></script><script defer="defer"  src="/scripts/views/entrant.js"></script><script defer="defer"  src="/scripts/app.js"></script>  </body>
 </html>

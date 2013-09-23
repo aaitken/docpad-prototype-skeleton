@@ -2,47 +2,46 @@
   var __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
-  APP.views.Dropzone = (function(_super) {
-    __extends(Dropzone, _super);
+  APP.views.ContenderDropzone = (function(_super) {
+    __extends(ContenderDropzone, _super);
 
-    function Dropzone() {
+    function ContenderDropzone() {
       this.el = '#ff-dropzone';
-      Dropzone.__super__.constructor.call(this);
+      ContenderDropzone.__super__.constructor.call(this);
     }
 
-    Dropzone.prototype.events = {
+    ContenderDropzone.prototype.events = {
       'dragover': 'handleDragover',
       'dragend': 'handleDragend',
       'drop': 'handleDrop'
     };
 
-    Dropzone.prototype.handleDragover = function() {
+    ContenderDropzone.prototype.handleDragover = function() {
       this.$el.addClass('ff-hover');
       return false;
     };
 
-    Dropzone.prototype.handleDragend = function() {};
+    ContenderDropzone.prototype.handleDragend = function() {};
 
-    Dropzone.prototype.handleDrop = function() {
+    ContenderDropzone.prototype.handleDrop = function() {
       this.file = event.dataTransfer.files[0];
       this.preview();
       return false;
     };
 
-    Dropzone.prototype.preview = function() {
-      var $el, reader;
+    ContenderDropzone.prototype.preview = function() {
+      var reader,
+        _this = this;
       reader = new FileReader();
-      $el = this.$el;
       reader.onload = function(event) {
-        var image;
-        image = new Image;
-        image.src = event.target.result;
-        return $el.html(image);
+        _this.image = new Image();
+        _this.image.src = event.target.result;
+        return _this.$el.html(_this.image);
       };
       return reader.readAsDataURL(this.file);
     };
 
-    return Dropzone;
+    return ContenderDropzone;
 
   })(Backbone.View);
 

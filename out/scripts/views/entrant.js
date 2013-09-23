@@ -8,7 +8,7 @@
     function Entrant(data) {
       if (data == null) {
         data = {
-          picture: '/images/kielbasa.jpg',
+          imgSrc: '/images/kielbasa.jpg',
           title: 'Test',
           description: 'blah blah blah'
         };
@@ -25,7 +25,7 @@
     Entrant.prototype.events = {};
 
     Entrant.prototype.render = function() {
-      this.$el.html("<div class=\"ff-image-container\">\n  <img src=\"" + this.data.picture + "\">\n</div>\n<div class=\"ff-image-relatives\">\n  <h6>" + this.data.title + "</h6>\n  <p>" + this.data.description + "</p>\n  <a class=\"button small success ff-lunch\">lunch it</a>\n  <a class=\"button small alert ff-lunch\">launch it</a>\n</div> ");
+      this.$el.html("<div class=\"ff-image-container\">\n  <img src=\"" + this.data.imgSrc + "\">\n</div>\n<div class=\"ff-image-relatives\">\n  <h6>" + this.data.title + "</h6>\n  <p>" + this.data.description + "</p>\n  <a class=\"button small success ff-lunch\">lunch it</a>\n  <a class=\"button small alert ff-lunch\">launch it</a>\n</div> ");
       return this.$el.prependTo('#ff-entrants');
     };
 

@@ -7,10 +7,10 @@ div class:"ff-container", ->
       h5 "1. Drag yer fool picture here"
   
   div class:"ff-attribute-container", ->
-    h5 "2. Title your pretender"
-    input type:"text", class:"ff-title"
+    h5 "2. Title the pretender"
+    input type:"text", id:"ff-title", class:"ff-title", value:""
     h5 "3. Sell that shit"
-    textarea class:"ff-description"
-    a class:"button", "Put me on the Card"
+    textarea id:"ff-description", class:"ff-description", value:""
+    a id:"ff-button", class:"button", "Put me on the Card"
 
 
