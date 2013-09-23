@@ -8,14 +8,15 @@
     function Contender() {
       this.el = '#ff-contender';
       this.dropzone = new APP.views.ContenderDropzone();
+      this.button = new APP.views.ContenderButton();
+      this.successOptions = new APP.views.ContenderSuccessOptions();
       this.Entrant = APP.views.Entrant;
       Contender.__super__.constructor.call(this);
     }
 
     Contender.prototype.initialize = function() {
       this.titleField = this.$('#ff-title')[0];
-      this.descriptionArea = this.$('#ff-description')[0];
-      return this.button = $('#ff-button');
+      return this.descriptionArea = this.$('#ff-description')[0];
     };
 
     Contender.prototype.events = {
@@ -24,6 +25,9 @@
 
     Contender.prototype.makeContender = function() {
       this.makeData();
+      debugger;
+      this.button.showLatency();
+      this.successOptions.resolveLatency();
       return new this.Entrant(this.data);
     };
 

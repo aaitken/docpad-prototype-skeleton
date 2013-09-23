@@ -12,5 +12,11 @@ div class:"ff-container", ->
     h5 "3. Sell that shit"
     textarea id:"ff-description", class:"ff-description", value:""
     a id:"ff-button", class:"button", "Put me on the Card"
+    ul id:"ff-success-options", class:"inline-list", ->
+      li ->
+        a href="#", "Go to the Card"
+      li ->
+        a href="#", "Enter more Dogmeat"
+      
 
 

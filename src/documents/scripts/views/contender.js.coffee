@@ -3,6 +3,8 @@ class APP.views.Contender extends Backbone.View
   constructor: ->
     @el = '#ff-contender'
     @dropzone = new APP.views.ContenderDropzone()
+    @button = new APP.views.ContenderButton()
+    @successOptions = new APP.views.ContenderSuccessOptions()
     @Entrant = APP.views.Entrant
     super()
 
@@ -10,7 +12,6 @@ class APP.views.Contender extends Backbone.View
   initialize: ->
     @titleField = @$('#ff-title')[0]
     @descriptionArea = @$('#ff-description')[0]
-    @button = $('#ff-button')
 
 
   events:
@@ -19,7 +20,11 @@ class APP.views.Contender extends Backbone.View
 
   makeContender: ->
     @makeData()
+    debugger
+    @button.showLatency()
+    @successOptions.resolveLatency()
     new @Entrant(@data)
+
 
 
   makeData: ->

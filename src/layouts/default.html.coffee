@@ -31,6 +31,8 @@ html ->
       '/scripts/namespaces.js'
       '/scripts/views/contender.js'
       '/scripts/views/contender-dropzone.js'
+      '/scripts/views/contender-button.js'
+      '/scripts/views/contender-success-options.js'
       '/scripts/views/entrant.js'
       '/scripts/app.js']
       .concat(@document.scripts))
