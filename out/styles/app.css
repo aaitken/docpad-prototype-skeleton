@@ -2,3 +2,7 @@ h3.subheader {
   position: relative;
   top: -1em;
 }
+
+.reveal-modal p {
+  margin-bottom: 0.25em;
+}

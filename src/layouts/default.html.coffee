@@ -22,6 +22,25 @@ html ->
   
       text(@content)
 
+    div id:"myModal", class:"reveal-modal small", ->
+      form class:"custom", ->
+        h2 "Launch That Shit"
+        p "Send"
+        img src:""
+        p "At"
+        input type:"text"
+        p "Optionally telling him/her to"
+        textarea()
+        label for:"radio1", ->
+          input name:"radio1", type:"radio", id:"radio1", style:"display:none;", CHECKED:""
+          span class:"custom radio checked"
+          text "Remain anonymous"
+        label for:"radio1", ->
+          input name:"radio1", type:"radio", id:"radio1", style:"display:none;"
+          span class:"custom radio"
+          text "Reveal your intent"
+        button class:"large button alert", "Fire!"
+
     text(@getBlock('scripts').add([
       '/scripts/vendor/modernizr-2.6.2.js'
       '/scripts/vendor/underscore-1.5.2.js'

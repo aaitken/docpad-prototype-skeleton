@@ -41,7 +41,7 @@
         <h6>Beam</h6>
         <p>Devil's Cut, the newest bourbon from Jim Beam, offers a rich, full-flavored bourbon experience for those seeking a new way to enjoy bourbon.</p>
         <a class="button small success ff-lunch">lunch it</a>
-        <a class="button small alert ff-launch">launch it</a>
+        <a data-reveal-id="myModal" class="button small alert ff-launch">launch it</a>
       </div>
     </div>
     <div class="ff-entrant">
@@ -52,7 +52,7 @@
         <h6>Jack</h6>
         <p>Black Jack</p>
         <a class="button small success ff-lunch">lunch it</a>
-        <a class="button small alert ff-launch">launch it</a>
+        <a data-reveal-id="myModal" class="button small alert ff-launch">launch it</a>
       </div>
     </div>
     <div class="ff-entrant">
@@ -63,7 +63,7 @@
         <h6>Cheetos</h6>
         <p>...but just the Cheetos.</p>
         <a class="button small success ff-lunch">lunch it</a>
-        <a class="button small alert ff-launch">launch it</a>
+        <a data-reveal-id="myModal" class="button small alert ff-launch">launch it</a>
       </div>
     </div>
   </div>
@@ -111,6 +111,26 @@
     </div>
   </section>
 </div>
+    </div>
+    <div id="myModal" class="reveal-modal small">
+      <form class="custom">
+        <h2>Launch That Shit</h2>
+        <p>Send</p>
+        <img src="" />
+        <p>At</p>
+        <input type="text" />
+        <p>Optionally telling him/her to</p>
+        <textarea></textarea>
+        <label for="radio1">
+          <input name="radio1" type="radio" id="radio1" style="display:none;" CHECKED="" />
+          <span class="custom radio checked"></span>
+Remain anonymous        </label>
+        <label for="radio1">
+          <input name="radio1" type="radio" id="radio1" style="display:none;" />
+          <span class="custom radio"></span>
+Reveal your intent        </label>
+        <button class="large button alert">Fire!</button>
+      </form>
     </div>
 <script >(function(){
 	/* Did we just livereload? */

@@ -23,4 +23,4 @@ div class:"ff-container", ->
           h6 "#{entrant.title}"
           p "#{entrant.description}"
           a class:"button small success ff-lunch", "lunch it"
-          a class:"button small alert ff-launch", "launch it"
+          a "data-reveal-id":"myModal", class:"button small alert ff-launch", "launch it"
