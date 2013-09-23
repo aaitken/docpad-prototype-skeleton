@@ -10,6 +10,10 @@
       ContenderDropzone.__super__.constructor.call(this);
     }
 
+    ContenderDropzone.prototype.initialize = function() {
+      return this.html = this.$el.html();
+    };
+
     ContenderDropzone.prototype.events = {
       'dragover': 'handleDragover',
       'dragend': 'handleDragend',
@@ -39,6 +43,11 @@
         return _this.$el.html(_this.image);
       };
       return reader.readAsDataURL(this.file);
+    };
+
+    ContenderDropzone.prototype.reset = function() {
+      this.$el.removeClass('ff-hover');
+      return this.$el.html(this.html);
     };
 
     return ContenderDropzone;

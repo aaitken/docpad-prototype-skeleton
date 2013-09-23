@@ -13,6 +13,7 @@
     ContenderButton.prototype.showLatency = function() {
       var _this = this;
       this.$el.width(this.$el.width());
+      this.html = this.$el.html();
       this.$el.html('Uploading...');
       this.$el.addClass('disabled');
       return setTimeout((function() {
@@ -25,6 +26,8 @@
     };
 
     ContenderButton.prototype.show = function() {
+      this.$el.removeClass('disabled');
+      this.$el.html(this.html);
       return this.$el.show();
     };
 

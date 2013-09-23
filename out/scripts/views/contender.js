@@ -20,12 +20,18 @@
     };
 
     Contender.prototype.events = {
-      'click #ff-button': 'makeContender'
+      'click #ff-button': 'makeContender',
+      'click #ff-go-to-card': 'goToCard',
+      'click #ff-enter-more-dogmeat': 'reset'
+    };
+
+    Contender.prototype.goToCard = function() {
+      $('#ff-card-link').trigger('click');
+      return this.reset();
     };
 
     Contender.prototype.makeContender = function() {
       this.makeData();
-      debugger;
       this.button.showLatency();
       this.successOptions.resolveLatency();
       return new this.Entrant(this.data);
@@ -37,6 +43,14 @@
         title: this.titleField.value,
         description: this.descriptionArea.value
       };
+    };
+
+    Contender.prototype.reset = function() {
+      this.button.show();
+      this.successOptions.hide();
+      this.titleField.value = '';
+      this.descriptionArea.value = '';
+      return this.dropzone.reset();
     };
 
     return Contender;

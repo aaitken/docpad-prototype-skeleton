@@ -16,7 +16,7 @@ div class:"section-container auto", "data-section":"", ->
   
   section ->
     p class:"title", "data-section-title":"", ->
-      a href:"#panel1", "Current Card"
+      a id:"ff-card-link", href:"#panel1", "Current Card"
     div id:"ff-card", class:"content ff-card", "data-section-content":"", ->
       @partial('card.html.coffee')
 

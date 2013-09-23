@@ -7,6 +7,7 @@ class APP.views.ContenderButton extends Backbone.View
 
   showLatency: ->
     @$el.width(@$el.width())
+    @html = @$el.html()
     @$el.html('Uploading...')
     @$el.addClass('disabled')
     setTimeout (=>
@@ -18,6 +19,8 @@ class APP.views.ContenderButton extends Backbone.View
 
 
   show: ->
+    @$el.removeClass('disabled')
+    @$el.html(@html)
     @$el.show()
 
 

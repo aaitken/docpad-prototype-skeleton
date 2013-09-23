@@ -4,7 +4,11 @@ class APP.views.ContenderDropzone extends Backbone.View
     @el = '#ff-dropzone'
     super()
 
-
+  
+  initialize: ->
+    @html = @$el.html()
+  
+    
   events:
     'dragover': 'handleDragover'
     'dragend': 'handleDragend'
@@ -33,4 +37,9 @@ class APP.views.ContenderDropzone extends Backbone.View
       @image.src = event.target.result
       @$el.html(@image)
     reader.readAsDataURL(@file)
+
+
+  reset: ->
+    @$el.removeClass('ff-hover')
+    @$el.html(@html)
 

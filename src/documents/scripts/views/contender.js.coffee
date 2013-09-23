@@ -16,15 +16,20 @@ class APP.views.Contender extends Backbone.View
 
   events:
     'click #ff-button': 'makeContender'
+    'click #ff-go-to-card': 'goToCard'
+    'click #ff-enter-more-dogmeat': 'reset'
 
 
+  goToCard: ->
+    $('#ff-card-link').trigger('click')
+    @reset()
+
+ 
   makeContender: ->
     @makeData()
-    debugger
     @button.showLatency()
     @successOptions.resolveLatency()
     new @Entrant(@data)
-
 
 
   makeData: ->
@@ -34,4 +39,9 @@ class APP.views.Contender extends Backbone.View
       description: @descriptionArea.value}
 
 
-    
+  reset: ->
+    @button.show()
+    @successOptions.hide()
+    @titleField.value = ''
+    @descriptionArea.value = ''
+    @dropzone.reset()

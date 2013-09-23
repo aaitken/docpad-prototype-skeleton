@@ -14,9 +14,9 @@ div class:"ff-container", ->
     a id:"ff-button", class:"button", "Put me on the Card"
     ul id:"ff-success-options", class:"inline-list", ->
       li ->
-        a href="#", "Go to the Card"
+        a id:"ff-go-to-card", href:"#", "Go to the Card"
       li ->
-        a href="#", "Enter more Dogmeat"
+        a id:"ff-enter-more-dogmeat", href:"#", "Enter more Dogmeat"
       
 
 
