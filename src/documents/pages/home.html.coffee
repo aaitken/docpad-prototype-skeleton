@@ -6,9 +6,14 @@ styles: [
   '/styles/card.css']
 scripts: []
 entrants: [
+  {picture: "/images/mix.jpeg", title: "Variety Mix", description:"I'm sick of gronola for breakfast. Let's get this french fry/wasabi pea/peanut mix in da house."}
   {picture: "/images/jim-beam.jpg", title: "Beam", description: "Devil's Cut, the newest bourbon from Jim Beam, offers a rich, full-flavored bourbon experience for those seeking a new way to enjoy bourbon."}
   {picture: "/images/jack-daniels.jpg", title: "Jack", description: "Black Jack"}
-  {picture: "/images/cheetos-girl-in-bath.jpg", title: "Cheetos", description:"...but just the Cheetos."}]
+  {picture: "/images/gummies.jpeg", title: "Gummies", description:""}
+  {picture: "/images/cheetos-girl-in-bath.jpg", title: "Cheetos", description:"...but just the Cheetos."}
+  {picture: "/images/fruit.jpeg", title: "Fruit", description:"I mean, we gotta... Right?"}
+  
+  ]
 
 ---
 
