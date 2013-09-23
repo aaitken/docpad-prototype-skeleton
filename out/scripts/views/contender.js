@@ -31,10 +31,12 @@
     };
 
     Contender.prototype.makeContender = function() {
+      var entrant;
       this.makeData();
       this.button.showLatency();
       this.successOptions.resolveLatency();
-      return new this.Entrant(this.data);
+      entrant = new this.Entrant(this.data);
+      return entrant.render();
     };
 
     Contender.prototype.makeData = function() {

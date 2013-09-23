@@ -1,16 +1,17 @@
 class APP.views.Entrant extends Backbone.View
 
-  constructor: (data = {imgSrc:'/images/kielbasa.jpg', title:'Test', description:'blah blah blah'})->
-    @className = 'ff-entrant'
+  constructor: (data = {})->
+    if data.el
+      @el = data.el
+    else
+      @className = 'ff-entrant'
     @data = data
     super()
 
   
-  initialize: ->
-    @render()
-
-
-  events: {}
+  events:
+    'click .success': -> alert 'lunch'
+    'click .alert': -> alert 'launch'
    
 
   render: ->

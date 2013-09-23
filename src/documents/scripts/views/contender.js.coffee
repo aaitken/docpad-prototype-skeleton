@@ -29,7 +29,8 @@ class APP.views.Contender extends Backbone.View
     @makeData()
     @button.showLatency()
     @successOptions.resolveLatency()
-    new @Entrant(@data)
+    entrant = new @Entrant(@data)
+    entrant.render()
 
 
   makeData: ->
