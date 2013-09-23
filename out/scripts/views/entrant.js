@@ -19,8 +19,28 @@
     }
 
     Entrant.prototype.events = {
-      'click .success': function() {
-        return alert('lunch');
+      'click .success': 'lunch',
+      'click .alert': 'launch'
+    };
+
+    Entrant.prototype.launch = function() {
+      var $launchButton;
+      $launchButton = this.$('.alert');
+      $('#myModal img').attr('src', this.$('img').attr('src'));
+      $launchButton.width($launchButton.width());
+      return setTimeout((function() {
+        $launchButton.html('launched');
+        return $launchButton.addClass('disabled');
+      }), 1000);
+    };
+
+    Entrant.prototype.lunch = function() {
+      var $lunchButton;
+      $lunchButton = this.$('.success');
+      if (!$lunchButton.hasClass('disabled')) {
+        $lunchButton.width($lunchButton.width());
+        $lunchButton.html(Math.floor((Math.random() * 50) + 1));
+        return $lunchButton.addClass('disabled');
       }
     };
 

@@ -23,8 +23,8 @@ html ->
       text(@content)
 
     div id:"myModal", class:"reveal-modal small", ->
+      h2 "Launch That Shit"
       form class:"custom", ->
-        h2 "Launch That Shit"
         p "Send"
         img src:""
         p "At"

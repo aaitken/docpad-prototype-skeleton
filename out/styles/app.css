@@ -3,6 +3,20 @@ h3.subheader {
   top: -1em;
 }
 
+.reveal-modal {
+  top: 50px;
+}
 .reveal-modal p {
   margin-bottom: 0.25em;
+}
+.reveal-modal input {
+  width: 50%;
+}
+.reveal-modal img {
+  max-height: 200px;
+  max-width: 300px;
+}
+.reveal-modal .button.large {
+  margin-top: 25px;
+  margin-bottom: 0;
 }
